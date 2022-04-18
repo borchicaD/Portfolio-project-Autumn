@@ -78,7 +78,7 @@ nav ul li a:hover {
 }
 /* header style */
 header{
-    background-image: linear-gradient(rgba(12, 12, 12, 0.9), rgb(240, 153, 116, 0.6)), url(img/sky.JPG);
+    background-image: linear-gradient(rgba(12, 12, 12, 0.7), rgb(240, 153, 116, 0.6)), url(img/sky.JPG);
     height: 70vh;
     background-position: center;
     background-size: cover;
