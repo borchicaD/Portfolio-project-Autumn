@@ -48,6 +48,10 @@ ul {
 img {
     width: 100%;
 }
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
 
 /* nav */
 nav {
@@ -74,8 +78,8 @@ nav ul li a:hover {
 }
 /* header style */
 header{
-    background-image: linear-gradient(rgba(12, 12, 12, 0.9), rgb(240, 153, 116, 0.6)), url(img/cky.JPG);
-    height: 80vh;
+    background-image: linear-gradient(rgba(12, 12, 12, 0.9), rgb(240, 153, 116, 0.6)), url(img/sky.JPG);
+    height: 70vh;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -120,9 +124,7 @@ header p {
     margin-bottom: 30px;
 }
 .card h3 {
-    text-transform: uppercase;
     margin-bottom: 30px;
-    font-size: 1.5rem;
 }
 .card p {
     text-align:justify;
@@ -137,7 +139,76 @@ header p {
 }
 .gallery div {
     flex: 0 0 48%;
+    text-align: center;
+    padding: 30px 0;
 }
+.gallery h3 {
+    padding: 30px 0;
+}
+.gallery p {
+    margin-bottom: 30px;
+}
+/* footer */
+footer {
+    background-color: var(--black);
+    color: var(--lightgray);
+}
+.footer-top {
+    background-image: linear-gradient(rgba(12, 12, 12, 0.9), rgb(240, 153, 116, 0.6)), url(img/sky.JPG);
+    height: 30vh;
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top p {
+    padding: 50px 0;
+    font-size: 1.2rem;
+    line-height: 2;
+    opacity: 0.8;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.8;
+}
+.footer h4 {
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+.footer p{
+    margin-bottom: 20px;
+}
+.footer ul{
+    display: flex;
+}
+.footer ul li i {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 20px;
+}
+.footer ul li i:hover{
+    color: var(--btn);
+    transition: var(--transition);
+}
+.footer p:last-child{
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+.footer p a {
+    font-size: 0.9;
+    color: var(--lightgray)
+}
+
+
 
 
 
