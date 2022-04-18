@@ -3,10 +3,10 @@
 
 :root {
     --primary: #ffc1ab;
-    --btn:#cd7a5c;
-    --hover: #b4502b;
+    --btn: #f09974;
     --lightgray: #f5f5f5;
     --text: #2e2e2e;
+    --gray: #595959;
     --white: #fff;
     --black: #000;
     --fontFamily: 'Roboto', sans-serif;
@@ -33,18 +33,111 @@ button {
     background-color: var(--btn);
     color: var(--white);
     border: none;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     transition: var(--transition);
+    font-size: 1.2rem;
 }
 button:hover {
-    background-color: var(--hover);
+    background-color: var(--primary);
+    color: var(--gray);
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
 }
 
+/* nav */
+nav {
+    display: flex;
+    justify-content: end;
+    padding: 30px;
+    background-color: var(--black);
+    text-transform: uppercase;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+nav ul li {
+    margin-right: 60px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+nav ul li a:hover {
+    color: var(--btn);
+    transition: var(--transition);
+}
 /* header style */
 header{
-    background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgb(255, 193, 171, 0.8)), url(img/cky.JPG);
-    height: 85vh;
+    background-image: linear-gradient(rgba(12, 12, 12, 0.9), rgb(240, 153, 116, 0.6)), url(img/cky.JPG);
+    height: 80vh;
     background-position: center;
     background-size: cover;
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+header h1 {
+    font-size: 4rem;
+}
+header p {
+    font-size: 2rem;
+}
+/* blog */
+.blog {
+    background-color: var(--lightgray);
+    padding: 100px 0;
+}
+.blog .intro {
+    text-align: center;
+}
+.blog .intro h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.blog .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 100px 30px;
+    text-align: center;
+}
+.blog .card div {
+    flex: 0 0 30%;
+}
+.card i {
+    font-size: 35px;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+.card h3 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+.card p {
+    text-align:justify;
+    margin-bottom: 30px;
+}
+
+/* gallery */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery div {
+    flex: 0 0 48%;
+}
+
+
+
