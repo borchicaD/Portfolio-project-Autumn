@@ -3,10 +3,10 @@
 
 :root {
     --primary: #ffc1ab;
-    --btn: #f09974;
+    --btn: #f68d5f;
     --lightgray: #f5f5f5;
     --text: #2e2e2e;
-    --gray: #595959;
+    --gray: #717171;
     --white: #fff;
     --black: #000;
     --fontFamily: 'Roboto', sans-serif;
@@ -112,11 +112,15 @@ header p {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 100px 30px;
     text-align: center;
 }
 .blog .card div {
     flex: 0 0 30%;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0.3px 0.5px var(--gray);
 }
 .card i {
     font-size: 35px;
@@ -208,7 +212,56 @@ footer {
     color: var(--lightgray)
 }
 
+/* RESPONSIVE */
+/* Min 768px Max 1200px */
+@media(min-width: 768px) and (max-width: 1200px){
+}
 
+
+/* Min 380px Max  767px */
+/* @media(min-width: 767px){
+    nav {
+        padding: 10px;
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+}
+header h1 {
+    font-size: 2.5rem;
+}
+header p {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.1rem;
+}
+h2{
+    font-size: 1.3rem;
+}
+.blog{
+    padding-bottom: 0;
+}
+.blog .card {
+    padding:50px 10px;
+}
+.blog .card div {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+}
+.gallery div {
+    flex: 0 0 100%;
+}
+.footer-top p {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.1;
+    opacity: 0.8;
+}
+.footer p {
+    text-align: center;
+} */
 
 
 
